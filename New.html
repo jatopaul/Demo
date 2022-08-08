@@ -1,0 +1,140 @@
+
+<html>
+<head></head>
+
+<style>
+
+
+.map-page-wrapper {
+    padding-top: 120px;
+}
+
+.map-page-wrapper {
+    position: relative;
+    background: #f4f4f4;
+    padding-bottom: 57px;
+    font-family: "Noto Sans";
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.map-page-wrapper .location-section h2 {
+    color: #666;
+    font-family: "Noto Sans";
+    font-size: calc(40px + 10*((100vw - 320px)/1600));
+    font-weight: 400;
+    padding-left: 17px;
+    padding-right: 17px;
+    z-index: 1000;
+    position: relative;
+}
+
+
+.map-page-wrapper {
+  // position: relative;
+ //   background: #f4f4f4;
+   // padding-bottom: 57px;
+    font-family: "Noto Sans";
+   -webkit-font-smoothing: antialiased;
+   // -moz-font-smoothing: antialiased;
+   // -o-font-smoothing: antialiased;
+ //   overflow: hidden;
+
+    font-family: "Noto Sans",sans-serif;
+    font-size: 14px;
+    color: #000;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 320px;
+}
+
+.map-page-wrapper .map-menu {
+    width: 100%;
+    padding: 16px;
+}
+
+
+
+
+
+</style>
+
+
+<body>
+
+
+
+<div class="map-page-wrapper" data-all-link="/-/media/feature/qims-shotgun-locations/data/all_data.csv" data-continent-link="/-/media/feature/qims-shotgun-locations/data/continent_data.csv" data-json-map="/-/media/feature/qims-shotgun-locations/data/paths-world.json" style="">
+
+    <div class="location-section">
+        <h2 class="">Locations</h2>
+        <div class="location-block">
+            <div id="map-menu" class="continents map-menu">
+                <h3 class="s-title">Select a continent</h3>
+                <ul id="continents"><li class="cont"><a id="north_america" class="cont" href="#">North America</a><div class="region" id="region_north_america"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_1 mCS_no_scrollbar" style=""><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 61px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="canada" class="reg" href="#">Canada</a></li><li class="reg"><a id="united_states" class="reg" href="#">United States</a><ul></ul></li></ul></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="asia_and_oceania" class="cont" href="#">Asia and Oceania</a><div class="region" id="region_asia_and_oceania"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_2 mCS_no_scrollbar" style=""><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="asia_pacific" class="reg" href="#">Asia Pacific</a></li><li class="reg"><a id="australia_and_new_zealand" class="reg" href="#">Australia and New Zealand</a></li><li class="reg"><a id="china" class="reg" href="#">China</a></li><li class="reg"><a id="india" class="reg" href="#">India</a></li><li class="reg"><a id="indonesia" class="reg" href="#">Indonesia</a></li><li class="reg"><a id="japan" class="reg" href="#">Japan</a></li><li class="reg"><a id="korea" class="reg" href="#">Korea</a></li><li class="reg"><a id="malaysia" class="reg" href="#">Malaysia</a></li><li class="reg"><a id="pakistan" class="reg" href="#">Pakistan</a></li><li class="reg"><a id="philippines" class="reg" href="#">Philippines</a></li><li class="reg"><a id="republic_of_kazakhstan" class="reg" href="#">Republic of Kazakhstan</a></li><li class="reg"><a id="singapore" class="reg" href="#">Singapore</a></li><li class="reg"><a id="sri_lanka" class="reg" href="#">Sri Lanka</a></li><li class="reg"><a id="thailand" class="reg" href="#">Thailand</a></li><li class="reg"><a id="vietnam" class="reg" href="#">Vietnam</a><ul></ul></li></ul></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="europe" class="cont" href="#">Europe</a><div class="region" id="region_europe"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_3 mCS_no_scrollbar" style=""><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="adriatic" class="reg" href="#">Adriatic</a></li><li class="reg"><a id="albania" class="reg" href="#">Albania</a></li><li class="reg"><a id="austria" class="reg" href="#">Austria</a></li><li class="reg"><a id="belgium" class="reg" href="#">Belgium</a></li><li class="reg"><a id="bosnia_and_herzegovina" class="reg" href="#">Bosnia and Herzegovina</a></li><li class="reg"><a id="bulgaria" class="reg" href="#">Bulgaria</a></li><li class="reg"><a id="croatia" class="reg" href="#">Croatia</a></li><li class="reg"><a id="czech_republic" class="reg" href="#">Czech Republic</a></li><li class="reg"><a id="denmark" class="reg" href="#">Denmark</a></li><li class="reg"><a id="estonia" class="reg" href="#">Estonia</a></li><li class="reg"><a id="finland" class="reg" href="#">Finland</a></li><li class="reg"><a id="france" class="reg" href="#">France</a></li><li class="reg"><a id="germany" class="reg" href="#">Germany</a></li><li class="reg"><a id="greece" class="reg" href="#">Greece</a></li><li class="reg"><a id="hungary" class="reg" href="#">Hungary</a></li><li class="reg"><a id="ireland" class="reg" href="#">Ireland</a></li><li class="reg"><a id="italy" class="reg" href="#">Italy</a></li><li class="reg"><a id="latvia" class="reg" href="#">Latvia</a></li><li class="reg"><a id="lithuania" class="reg" href="#">Lithuania</a></li><li class="reg"><a id="macedonia" class="reg" href="#">Macedonia</a></li><li class="reg"><a id="malta" class="reg" href="#">Malta</a></li><li class="reg"><a id="montenegro" class="reg" href="#">Montenegro</a></li><li class="reg"><a id="netherlands" class="reg" href="#">Netherlands</a></li><li class="reg"><a id="nordics" class="reg" href="#">Nordics</a></li><li class="reg"><a id="norway" class="reg" href="#">Norway</a></li><li class="reg"><a id="poland" class="reg" href="#">Poland</a></li><li class="reg"><a id="portugal" class="reg" href="#">Portugal</a></li><li class="reg"><a id="romania" class="reg" href="#">Romania</a></li><li class="reg"><a id="russia" class="reg" href="#">Russia</a></li><li class="reg"><a id="serbia" class="reg" href="#">Serbia</a></li><li class="reg"><a id="slovakia" class="reg" href="#">Slovakia</a></li><li class="reg"><a id="slovenia" class="reg" href="#">Slovenia</a></li><li class="reg"><a id="spain" class="reg" href="#">Spain</a></li><li class="reg"><a id="sweden" class="reg" href="#">Sweden</a></li><li class="reg"><a id="switzerland" class="reg" href="#">Switzerland</a></li><li class="reg"><a id="turkey" class="reg" href="#">Turkey</a></li><li class="reg"><a id="ukraine" class="reg" href="#">Ukraine</a></li><li class="reg"><a id="united_kingdom" class="reg" href="#">United Kingdom</a><ul></ul></li></ul></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="latin_america" class="cont" href="#">Latin America</a><div class="region" id="region_latin_america"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_4 mCS_no_scrollbar" style=""><div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 391px;"><div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="argentina" class="reg" href="#">Argentina</a></li><li class="reg"><a id="bolivia" class="reg" href="#">Bolivia</a></li><li class="reg"><a id="brazil" class="reg" href="#">Brazil</a></li><li class="reg"><a id="chile" class="reg" href="#">Chile</a></li><li class="reg"><a id="colombia" class="reg" href="#">Colombia</a></li><li class="reg"><a id="costa_rica" class="reg" href="#">Costa Rica</a></li><li class="reg"><a id="ecuador" class="reg" href="#">Ecuador</a></li><li class="reg"><a id="guatemala" class="reg" href="#">Guatemala</a></li><li class="reg"><a id="mexico" class="reg" href="#">Mexico</a></li><li class="reg"><a id="paraguay" class="reg" href="#">Paraguay</a></li><li class="reg"><a id="peru" class="reg" href="#">Peru</a></li><li class="reg"><a id="uruguay" class="reg" href="#">Uruguay</a></li><li class="reg"><a id="venezuela" class="reg" href="#">Venezuela</a><ul></ul></li></ul></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="middle_east_and_africa" class="cont" href="#">Middle East and Africa</a><div class="region" id="region_middle_east_and_africa"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_5 mCS_no_scrollbar" style=""><div id="mCSB_5" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_5_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="algeria" class="reg" href="#">Algeria</a></li><li class="reg"><a id="egypt" class="reg" href="#">Egypt</a></li><li class="reg"><a id="ghana" class="reg" href="#">Ghana</a></li><li class="reg"><a id="israel" class="reg" href="#">Israel</a></li><li class="reg"><a id="jordan" class="reg" href="#">Jordan</a></li><li class="reg"><a id="kenya" class="reg" href="#">Kenya</a></li><li class="reg"><a id="kuwait" class="reg" href="#">Kuwait</a></li><li class="reg"><a id="lebanon" class="reg" href="#">Lebanon</a></li><li class="reg"><a id="middle_east__africa" class="reg" href="#">Middle East &amp; Africa</a></li><li class="reg"><a id="nigeria" class="reg" href="#">Nigeria</a></li><li class="reg"><a id="palestine_territory" class="reg" href="#">Palestine Territory</a></li><li class="reg"><a id="south_africa" class="reg" href="#">South Africa</a></li><li class="reg"><a id="tunisia" class="reg" href="#">Tunisia</a></li><li class="reg"><a id="uae" class="reg" href="#">UAE</a><ul></ul></li></ul></div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li></ul>
+            </div>
+
+            <div class="map-block">
+                <div id="mapworldbg" style="height: 593.13px;"></div>
+                <div id="map-world" style="height: 593.13px;"></div>
+            </div>
+
+            <div id="region-details" class="region-details">
+                <div id="back" class="back">
+                    <span class="desk">X</span><span class="mob">&lt;&lt; back to select continent</span>
+                </div>
+
+                <div class="mapa-wrap">
+                    <div class="mapa-inner">
+                        <div id="mapa" class="mapa"></div>
+                    </div>
+                </div>
+                <div id="details-content" class="details-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html>
+
+
+
+<div class="location-section">
+        <h2 class="">Locations</h2>
+        <div class="location-block">
+            <div id="map-menu" class="continents map-menu">
+                <h3 class="s-title">Select a continent</h3>
+                <ul id="continents"><li class="cont"><a id="north_america" class="cont" href="#">North America</a><div class="region" id="region_north_america"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_1 mCS_no_scrollbar" style=""><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: 61px;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="canada" class="reg" href="#">Canada</a></li><li class="reg"><a id="united_states" class="reg" href="#">United States</a><ul></ul></li></ul></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="asia_and_oceania" class="cont" href="#">Asia and Oceania</a><div class="region" id="region_asia_and_oceania"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_2 mCS_no_scrollbar" style=""><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="asia_pacific" class="reg" href="#">Asia Pacific</a></li><li class="reg"><a id="australia_and_new_zealand" class="reg" href="#">Australia and New Zealand</a></li><li class="reg"><a id="china" class="reg" href="#">China</a></li><li class="reg"><a id="india" class="reg" href="#">India</a></li><li class="reg"><a id="indonesia" class="reg" href="#">Indonesia</a></li><li class="reg"><a id="japan" class="reg" href="#">Japan</a></li><li class="reg"><a id="korea" class="reg" href="#">Korea</a></li><li class="reg"><a id="malaysia" class="reg" href="#">Malaysia</a></li><li class="reg"><a id="pakistan" class="reg" href="#">Pakistan</a></li><li class="reg"><a id="philippines" class="reg" href="#">Philippines</a></li><li class="reg"><a id="republic_of_kazakhstan" class="reg" href="#">Republic of Kazakhstan</a></li><li class="reg"><a id="singapore" class="reg" href="#">Singapore</a></li><li class="reg"><a id="sri_lanka" class="reg" href="#">Sri Lanka</a></li><li class="reg"><a id="thailand" class="reg" href="#">Thailand</a></li><li class="reg"><a id="vietnam" class="reg" href="#">Vietnam</a><ul></ul></li></ul></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="europe" class="cont" href="#">Europe</a><div class="region" id="region_europe"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_3 mCS_no_scrollbar" style=""><div id="mCSB_3" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_3_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="adriatic" class="reg" href="#">Adriatic</a></li><li class="reg"><a id="albania" class="reg" href="#">Albania</a></li><li class="reg"><a id="austria" class="reg" href="#">Austria</a></li><li class="reg"><a id="belgium" class="reg" href="#">Belgium</a></li><li class="reg"><a id="bosnia_and_herzegovina" class="reg" href="#">Bosnia and Herzegovina</a></li><li class="reg"><a id="bulgaria" class="reg" href="#">Bulgaria</a></li><li class="reg"><a id="croatia" class="reg" href="#">Croatia</a></li><li class="reg"><a id="czech_republic" class="reg" href="#">Czech Republic</a></li><li class="reg"><a id="denmark" class="reg" href="#">Denmark</a></li><li class="reg"><a id="estonia" class="reg" href="#">Estonia</a></li><li class="reg"><a id="finland" class="reg" href="#">Finland</a></li><li class="reg"><a id="france" class="reg" href="#">France</a></li><li class="reg"><a id="germany" class="reg" href="#">Germany</a></li><li class="reg"><a id="greece" class="reg" href="#">Greece</a></li><li class="reg"><a id="hungary" class="reg" href="#">Hungary</a></li><li class="reg"><a id="ireland" class="reg" href="#">Ireland</a></li><li class="reg"><a id="italy" class="reg" href="#">Italy</a></li><li class="reg"><a id="latvia" class="reg" href="#">Latvia</a></li><li class="reg"><a id="lithuania" class="reg" href="#">Lithuania</a></li><li class="reg"><a id="macedonia" class="reg" href="#">Macedonia</a></li><li class="reg"><a id="malta" class="reg" href="#">Malta</a></li><li class="reg"><a id="montenegro" class="reg" href="#">Montenegro</a></li><li class="reg"><a id="netherlands" class="reg" href="#">Netherlands</a></li><li class="reg"><a id="nordics" class="reg" href="#">Nordics</a></li><li class="reg"><a id="norway" class="reg" href="#">Norway</a></li><li class="reg"><a id="poland" class="reg" href="#">Poland</a></li><li class="reg"><a id="portugal" class="reg" href="#">Portugal</a></li><li class="reg"><a id="romania" class="reg" href="#">Romania</a></li><li class="reg"><a id="russia" class="reg" href="#">Russia</a></li><li class="reg"><a id="serbia" class="reg" href="#">Serbia</a></li><li class="reg"><a id="slovakia" class="reg" href="#">Slovakia</a></li><li class="reg"><a id="slovenia" class="reg" href="#">Slovenia</a></li><li class="reg"><a id="spain" class="reg" href="#">Spain</a></li><li class="reg"><a id="sweden" class="reg" href="#">Sweden</a></li><li class="reg"><a id="switzerland" class="reg" href="#">Switzerland</a></li><li class="reg"><a id="turkey" class="reg" href="#">Turkey</a></li><li class="reg"><a id="ukraine" class="reg" href="#">Ukraine</a></li><li class="reg"><a id="united_kingdom" class="reg" href="#">United Kingdom</a><ul></ul></li></ul></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="latin_america" class="cont" href="#">Latin America</a><div class="region" id="region_latin_america"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_4 mCS_no_scrollbar" style=""><div id="mCSB_4" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 391px;"><div id="mCSB_4_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="argentina" class="reg" href="#">Argentina</a></li><li class="reg"><a id="bolivia" class="reg" href="#">Bolivia</a></li><li class="reg"><a id="brazil" class="reg" href="#">Brazil</a></li><li class="reg"><a id="chile" class="reg" href="#">Chile</a></li><li class="reg"><a id="colombia" class="reg" href="#">Colombia</a></li><li class="reg"><a id="costa_rica" class="reg" href="#">Costa Rica</a></li><li class="reg"><a id="ecuador" class="reg" href="#">Ecuador</a></li><li class="reg"><a id="guatemala" class="reg" href="#">Guatemala</a></li><li class="reg"><a id="mexico" class="reg" href="#">Mexico</a></li><li class="reg"><a id="paraguay" class="reg" href="#">Paraguay</a></li><li class="reg"><a id="peru" class="reg" href="#">Peru</a></li><li class="reg"><a id="uruguay" class="reg" href="#">Uruguay</a></li><li class="reg"><a id="venezuela" class="reg" href="#">Venezuela</a><ul></ul></li></ul></div><div id="mCSB_4_scrollbar_vertical" class="mCSB_scrollTools mCSB_4_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_4_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li><li class="cont"><a id="middle_east_and_africa" class="cont" href="#">Middle East and Africa</a><div class="region" id="region_middle_east_and_africa"><div class="back">X</div><h3>Country</h3><div class="scrollbar-dynamic mCustomScrollbar _mCS_5 mCS_no_scrollbar" style=""><div id="mCSB_5" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: 414.2px;"><div id="mCSB_5_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><ul><li class="reg"><a id="algeria" class="reg" href="#">Algeria</a></li><li class="reg"><a id="egypt" class="reg" href="#">Egypt</a></li><li class="reg"><a id="ghana" class="reg" href="#">Ghana</a></li><li class="reg"><a id="israel" class="reg" href="#">Israel</a></li><li class="reg"><a id="jordan" class="reg" href="#">Jordan</a></li><li class="reg"><a id="kenya" class="reg" href="#">Kenya</a></li><li class="reg"><a id="kuwait" class="reg" href="#">Kuwait</a></li><li class="reg"><a id="lebanon" class="reg" href="#">Lebanon</a></li><li class="reg"><a id="middle_east__africa" class="reg" href="#">Middle East &amp; Africa</a></li><li class="reg"><a id="nigeria" class="reg" href="#">Nigeria</a></li><li class="reg"><a id="palestine_territory" class="reg" href="#">Palestine Territory</a></li><li class="reg"><a id="south_africa" class="reg" href="#">South Africa</a></li><li class="reg"><a id="tunisia" class="reg" href="#">Tunisia</a></li><li class="reg"><a id="uae" class="reg" href="#">UAE</a><ul></ul></li></ul></div><div id="mCSB_5_scrollbar_vertical" class="mCSB_scrollTools mCSB_5_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_5_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div></div></li></ul>
+            </div>
+
+            <div class="map-block">
+                <div id="mapworldbg" style="height: 593.13px;"></div>
+                <div id="map-world" style="height: 593.13px;"></div>
+            </div>
+
+            <div id="region-details" class="region-details">
+                <div id="back" class="back">
+                    <span class="desk">X</span><span class="mob">&lt;&lt; back to select continent</span>
+                </div>
+
+                <div class="mapa-wrap">
+                    <div class="mapa-inner">
+                        <div id="mapa" class="mapa"></div>
+                    </div>
+                </div>
+                <div id="details-content" class="details-content"></div>
+            </div>
+        </div>
+    </div>

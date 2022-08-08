@@ -1,0 +1,17 @@
+NODE JS:
+install vs code
+install node.js 
+	view version of node as node -v
+	view version of npm as npm -v
+
+ANGULAR:
+install angular
+	install -g @angular/cli
+create new file as
+	ng new filename
+	select YES ->Y
+Enter CSS(installing packages(npm))
+
+Then type
+	cd filename
+	ng serve

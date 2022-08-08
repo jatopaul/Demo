@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+Login page
+</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+body {
+ background-image: url("file:///C:/Users/Jato Paul/OneDrive/Desktop//New folder/about.jpg" );
+ background-size: 1550px;
+    margin: center;  
+    padding: 10;   
+    font-family: 'Arial';  
+}  
+.login{  
+		height: 200px;
+        width: 300px;  
+        margin: center;  
+        margin:60 600 100;
+        padding: 20px;  
+        background: lightgreen;  
+        border-radius: 30px ;  
+
+  </style>
+</head>
+<body>
+<h1 style="font-family:Trebuchet MS";text-align="center";font-size:24pt;
+color:#00FF00;><br><br><center>
+Login Page</center>
+</h1>
+<br><div class="login">
+<form name="login" method="post">
+<center><h4><font type="Trebuchet M">
+<br>
+<label for="Name">Name</label> <input type="text" name="name"/><br><br>
+<br><label for="username">Username</label><input type="text" name="userid"/><br><br>
+<label for="password">Password</label><input type="password" name="pswrd"/><br><br>
+<input type="button" style="background:lightblue"; name="log" onclick="check(this.form)" value="Submit"/>
+<input type="reset" value="Cancel"/></h4>
+</form>
+</div>
+<div class="center"><a href="index.html"> Home</a>
+</font></h4></form></div></font></h4></form></div>
+<iframe align="center" src="https://www.youtube.com/embed/fnTs-daHqyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay loop muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="300px" height="200px"></iframe>
+<iframe src="https://getbootstrap.com/docs/5.1/getting-started/javascript"></iframe>
+<script language="javascript">
+function check(form)
+{
+if(form.userid.value == "jato" && form.pswrd.value == "123")
+{
+window.open("target.html")
+}
+else
+{
+alert("Error Password or Username")
+}
+}
+</script>
+</body>
+</html>
