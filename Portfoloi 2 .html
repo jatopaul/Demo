@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio Landing Page</title>
+
+
+<style>
+
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+button, .button {
+  display: inline-block;
+  border: none;
+  background-color: #f33;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover, .button:hover {
+  background-color: #e22;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+/* Hero Section Styles */
+#hero {
+  background-image: url('img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#hero h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 80px 0;
+}
+
+#about p {
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+  padding: 80px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery li {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery li:hover .overlay {
+  opacity: 1;
+}
+
+.gallery li h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery li .button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px)
+
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>John Doe Photography</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h2>Welcome to My Photography Portfolio</h2>
+      <p>Explore my portfolio of beautiful and captivating photos</p>
+      <a href="#portfolio" class="button">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm John Doe, a professional photographer with over 10 years of experience. I specialize in capturing stunning photos of nature, landscapes, and wildlife. My work has been featured in several exhibitions and publications.</p>
+      <p>When I'm not taking photos, I love to hike and explore the great outdoors. I believe that nature is the ultimate source of inspiration and beauty.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Portfolio</h2>
+      <ul class="gallery">
+        <li>
+          <img src="img/photo1.jpg" alt="Photo 1">
+          <div class="overlay">
+            <h3>Photo 1</h3>
+            <a href="img/photo1.jpg" class="button">View Photo</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/photo2.jpg" alt="Photo 2">
+          <div class="overlay">
+            <h3>Photo 2</h3>
+            <a href="img/photo2.jpg" class="button">View Photo</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/photo3.jpg" alt="Photo 3">
+          <div class="overlay">
+            <h3>Photo 3</h3>
+            <a href="img/photo3.jpg" class="button">View Photo</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/photo4.jpg" alt="Photo 4">
+          <div class="overlay">
+            <h3>Photo 4</h3>
+            <a href="img/photo4.jpg" class="button">View Photo</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/photo5.jpg" alt="Photo 5">
+          <div class="overlay">
+            <h3>Photo 5</h3>
+            <a href="img/photo5.jpg" class="button">View Photo</a>
+          </div>
+        </li>
+        <li>
+          <img src="img/photo6.jpg" alt="Photo 6">
+          <div class="overlay">
